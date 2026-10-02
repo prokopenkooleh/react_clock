@@ -46,8 +46,8 @@ export class App extends React.Component<{}, AppState> {
   }
 
   render() {
-    const { clockName, hasClock } = this.state;
+    const { hasClock } = this.state;
 
-    return hasClock ? <Clock clockName={clockName} /> : null;
+    return hasClock ? <Clock name={this.state.clockName} /> : null;
   }
 }
